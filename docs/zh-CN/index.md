@@ -12,10 +12,6 @@ hero:
     - theme: alt
       text: 开始使用
       link: /zh-CN/guide/
-    - theme: alt
-      text: 查看首发指数
-      link: /zh-CN/indexes/
-
 features:
   - title: 看懂长期变化
     details: 一次停火、一轮谈判或一项政策都只是局部事件。Signa 将它们合成为和平进程、国家发展或技术普及等长期趋势。
