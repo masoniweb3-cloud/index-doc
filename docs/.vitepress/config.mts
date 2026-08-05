@@ -55,14 +55,6 @@ const localeRedirectScript = `(() => {
 
 const zhSidebar: DefaultTheme.SidebarItem[] = [
   {
-    text: '概览',
-    items: [
-      { text: '什么是 Signa Index', link: '/zh-CN/overview/what-is-signa-index' },
-      { text: '为什么需要世界状态指数', link: '/zh-CN/overview/why-world-state-index' },
-      { text: 'Signa Index 如何运作', link: '/zh-CN/overview/how-it-works' },
-    ],
-  },
-  {
     text: '使用指南',
     items: [
       { text: '开始使用', link: '/zh-CN/guide/' },
@@ -70,7 +62,34 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
       { text: '如何交易', link: '/zh-CN/guide/trading' },
       { text: '费用说明', link: '/zh-CN/guide/fees' },
       { text: '收益、亏损与指数归零', link: '/zh-CN/guide/returns-and-zero' },
-      { text: '资金安全与风险', link: '/zh-CN/guide/security' },
+      { text: '资金如何保管与保护', link: '/zh-CN/guide/security' },
+      { text: '充提问题排查', link: '/zh-CN/guide/troubleshooting' },
+    ],
+  },
+  {
+    text: '首发指数',
+    items: [
+      { text: '六个首发指数', link: '/zh-CN/indexes/' },
+      { text: '国家发展', link: '/zh-CN/indexes/country-development' },
+      { text: '地缘秩序', link: '/zh-CN/indexes/geopolitical-order' },
+      { text: '政治权力', link: '/zh-CN/indexes/political-power' },
+      { text: '技术演进', link: '/zh-CN/indexes/technology-evolution' },
+    ],
+  },
+  {
+    text: '了解 Signa',
+    items: [
+      { text: '什么是 Signa Index', link: '/zh-CN/overview/what-is-signa-index' },
+      { text: '为什么需要世界状态指数', link: '/zh-CN/overview/why-world-state-index' },
+      { text: 'Signa Index 如何运作', link: '/zh-CN/overview/how-it-works' },
+    ],
+  },
+  {
+    text: '产品与风险',
+    items: [
+      { text: '指数与指数份额', link: '/zh-CN/products/index-and-products' },
+      { text: '双向敞口', link: '/zh-CN/products/long-short-exposure' },
+      { text: '风险与适用性', link: '/zh-CN/products/risks' },
     ],
   },
   {
@@ -100,26 +119,8 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
     text: '数据与 AI',
     items: [
       { text: '数据来源', link: '/zh-CN/data-and-ai/data-sources' },
-      { text: '世界状态映射', link: '/zh-CN/data-and-ai/world-state-mapping' },
+      { text: 'AI 世界状态发现', link: '/zh-CN/data-and-ai/world-state-mapping' },
       { text: '数据质量', link: '/zh-CN/data-and-ai/data-quality' },
-    ],
-  },
-  {
-    text: '指数体系',
-    items: [
-      { text: '指数总览', link: '/zh-CN/indexes/' },
-      { text: '国家发展', link: '/zh-CN/indexes/country-development' },
-      { text: '地缘秩序', link: '/zh-CN/indexes/geopolitical-order' },
-      { text: '政治权力', link: '/zh-CN/indexes/political-power' },
-      { text: '技术演进', link: '/zh-CN/indexes/technology-evolution' },
-    ],
-  },
-  {
-    text: '指数挂钩产品',
-    items: [
-      { text: '指数与产品', link: '/zh-CN/products/index-and-products' },
-      { text: '双向敞口', link: '/zh-CN/products/long-short-exposure' },
-      { text: '风险与适用性', link: '/zh-CN/products/risks' },
     ],
   },
   {
@@ -128,7 +129,7 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
       { text: '术语表', link: '/zh-CN/reference/glossary' },
       { text: '公式汇总', link: '/zh-CN/reference/formulas' },
       { text: '常见问题', link: '/zh-CN/reference/faq' },
-      { text: '声明与限制', link: '/zh-CN/reference/disclosures' },
+      { text: '产品规则与声明', link: '/zh-CN/reference/disclosures' },
     ],
   },
 ]
@@ -152,7 +153,6 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '中文', link: '/zh-CN/' },
-          { text: 'Website', link: 'https://signaindex.com/' },
         ],
         sidebar: [],
         outline: { label: 'On this page' },
@@ -166,12 +166,10 @@ export default defineConfig({
       link: '/zh-CN/',
       themeConfig: {
         nav: [
-          { text: '概览', link: '/zh-CN/overview/what-is-signa-index' },
-          { text: '使用指南', link: '/zh-CN/guide/' },
+          { text: '开始使用', link: '/zh-CN/guide/' },
+          { text: '首发指数', link: '/zh-CN/indexes/' },
+          { text: '了解 Signa', link: '/zh-CN/overview/what-is-signa-index' },
           { text: '指数构建', link: '/zh-CN/methodology/overview' },
-          { text: '指数', link: '/zh-CN/indexes/' },
-          { text: '数据与 AI', link: '/zh-CN/data-and-ai/world-state-mapping' },
-          { text: '官网', link: 'https://signaindex.com/' },
         ],
         sidebar: zhSidebar,
         outline: { label: '本页目录', level: [2, 3] },
@@ -186,7 +184,21 @@ export default defineConfig({
   themeConfig: {
     logo: false,
     search: { provider: 'local' },
-    socialLinks: [],
+    socialLinks: [
+      {
+        icon: {
+          svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Signa Index Website</title><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2.8 12h18.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 2c2.9 2.7 4.6 6.2 4.6 10s-1.7 7.3-4.6 10c-2.9-2.7-4.6-6.2-4.6-10S9.1 4.7 12 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>',
+        },
+        link: 'https://signaindex.com/',
+      },
+      { icon: 'x', link: 'https://x.com/Signamarket' },
+      {
+        icon: {
+          svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Medium</title><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>',
+        },
+        link: 'https://medium.com/@signamarkets',
+      },
+    ],
     footer: {
       message: 'Prediction markets price events. Signa indexes the state of the world.',
       copyright: 'Signa Index',

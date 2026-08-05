@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: 开始使用
       link: /zh-CN/guide/
+    - theme: alt
+      text: 查看首发指数
+      link: /zh-CN/indexes/
 
 features:
   - title: 看懂长期变化
