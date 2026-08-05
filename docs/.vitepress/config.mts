@@ -1,5 +1,58 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
 
+const localeRedirectScript = `(() => {
+  const path = window.location.pathname;
+  const storageKey = 'signa-index-docs-locale';
+  const chineseLocale = 'zh-CN';
+  const englishLocale = 'en';
+
+  const rememberLocaleFromPath = (pathname) => {
+    if (pathname === '/zh-CN' || pathname.startsWith('/zh-CN/')) {
+      localStorage.setItem(storageKey, chineseLocale);
+      return;
+    }
+
+    if (pathname === '/' || pathname === '/index.html') {
+      localStorage.setItem(storageKey, englishLocale);
+    }
+  };
+
+  document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+
+    const link = target.closest('a[href]');
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+    if (!href || !href.startsWith('/')) return;
+    rememberLocaleFromPath(href);
+  }, { capture: true });
+
+  if (path === '/zh-CN' || path.startsWith('/zh-CN/')) {
+    localStorage.setItem(storageKey, chineseLocale);
+    return;
+  }
+
+  if (path !== '/' && path !== '/index.html') return;
+
+  const storedLocale = localStorage.getItem(storageKey);
+  if (storedLocale === englishLocale) return;
+  if (storedLocale === chineseLocale) {
+    window.location.replace('/zh-CN/');
+    return;
+  }
+
+  const browserLocales = Array.isArray(navigator.languages) && navigator.languages.length
+    ? navigator.languages
+    : [navigator.language];
+  const prefersChinese = browserLocales.some((locale) =>
+    typeof locale === 'string' && locale.toLowerCase().startsWith('zh')
+  );
+
+  if (prefersChinese) window.location.replace('/zh-CN/');
+})();`
+
 const zhSidebar: DefaultTheme.SidebarItem[] = [
   {
     text: '概览',
@@ -84,7 +137,11 @@ export default defineConfig({
   description: 'Documentation for the Signa World-State Index system.',
   cleanUrls: true,
   lastUpdated: true,
+  markdown: {
+    math: true,
+  },
   head: [
+    ['script', {}, localeRedirectScript],
     ['meta', { name: 'theme-color', content: '#121814' }],
   ],
   locales: {
@@ -94,6 +151,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '中文', link: '/zh-CN/' },
+          { text: 'Website', link: 'https://signaindex.com/' },
         ],
         sidebar: [],
         outline: { label: 'On this page' },
@@ -112,6 +170,7 @@ export default defineConfig({
           { text: '指数', link: '/zh-CN/indexes/' },
           { text: '数据与 AI', link: '/zh-CN/data-and-ai/world-state-mapping' },
           { text: '参考资料', link: '/zh-CN/reference/glossary' },
+          { text: '官网', link: 'https://signaindex.com/' },
         ],
         sidebar: zhSidebar,
         outline: { label: '本页目录', level: [2, 3] },

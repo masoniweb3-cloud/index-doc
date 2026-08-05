@@ -1,6 +1,6 @@
 # 到期与滚动接续
 
-**滚动接续（Rolling Continuity）**解决事件合约有限期限与世界状态长期持续之间的期限错配。
+<strong>滚动接续（Rolling Continuity）</strong>解决事件合约有限期限与世界状态长期持续之间的期限错配。
 
 ![当前周期事件退出、下一周期事件进入审查时点，而连续指数点位保持接续](/images/zh-CN/07-rolling-continuity-zh-CN.png)
 
