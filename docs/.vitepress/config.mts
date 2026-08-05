@@ -169,7 +169,6 @@ export default defineConfig({
           { text: '方法论', link: '/zh-CN/methodology/overview' },
           { text: '指数', link: '/zh-CN/indexes/' },
           { text: '数据与 AI', link: '/zh-CN/data-and-ai/world-state-mapping' },
-          { text: '参考资料', link: '/zh-CN/reference/glossary' },
           { text: '官网', link: 'https://signaindex.com/' },
         ],
         sidebar: zhSidebar,
