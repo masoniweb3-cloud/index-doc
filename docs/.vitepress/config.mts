@@ -73,9 +73,9 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
     ],
   },
   {
-    text: '方法论',
+    text: '指数构建',
     items: [
-      { text: '方法论总览', link: '/zh-CN/methodology/overview' },
+      { text: '构建流程', link: '/zh-CN/methodology/overview' },
       { text: '目标状态定义', link: '/zh-CN/methodology/objective-definition' },
       { text: '成分选择', link: '/zh-CN/methodology/component-selection' },
       { text: '状态暴露与权重', link: '/zh-CN/methodology/exposure-weighting' },
@@ -116,7 +116,7 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
     text: '治理',
     items: [
       { text: '指数治理', link: '/zh-CN/governance/index-governance' },
-      { text: '方法变更', link: '/zh-CN/governance/methodology-changes' },
+      { text: '规则变更', link: '/zh-CN/governance/methodology-changes' },
       { text: '异常事件', link: '/zh-CN/governance/exceptional-events' },
       { text: '版本管理', link: '/zh-CN/governance/versioning' },
     ],
@@ -166,7 +166,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '概览', link: '/zh-CN/overview/what-is-signa-index' },
-          { text: '方法论', link: '/zh-CN/methodology/overview' },
+          { text: '指数构建', link: '/zh-CN/methodology/overview' },
           { text: '指数', link: '/zh-CN/indexes/' },
           { text: '数据与 AI', link: '/zh-CN/data-and-ai/world-state-mapping' },
           { text: '官网', link: 'https://signaindex.com/' },

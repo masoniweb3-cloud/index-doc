@@ -10,7 +10,7 @@ hero:
       text: 了解 Signa Index
       link: /zh-CN/overview/what-is-signa-index
     - theme: alt
-      text: 阅读方法论
+      text: 了解指数构建
       link: /zh-CN/methodology/overview
 
 features:
