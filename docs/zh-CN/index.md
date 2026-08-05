@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: Signa Index
-  text: 世界状态指数
-  tagline: 将离散事件合成为对长期现实状态的连续金融敞口。
+  text: 把事件变成一条现实趋势
+  tagline: 汇集围绕同一现实主题的预测市场，持续反映世界正在朝哪个方向变化。
   actions:
     - theme: brand
       text: 了解 Signa Index
@@ -14,18 +14,18 @@ hero:
       link: /zh-CN/methodology/overview
 
 features:
-  - title: 世界状态
-    details: 从多个相关事件中提取国家发展、地缘秩序、政治权力与技术演进等持续变化的现实方向。
-    link: /zh-CN/concepts/world-state
-    linkText: 理解核心概念
-  - title: 规则型指数
-    details: 通过方向统一、状态暴露加权、价格聚合和滚动接续，形成可解释、可复现的连续指数序列。
-    link: /zh-CN/methodology/overview
-    linkText: 查看构造方法
-  - title: AI 状态映射
-    details: AI 识别事件与目标状态之间的因果路径，把自然语言事件转换为可计算的金融结构。
-    link: /zh-CN/data-and-ai/world-state-mapping
-    linkText: 了解 AI 的作用
+  - title: 看懂长期变化
+    details: 一次停火、一轮谈判或一项政策都只是局部事件。Signa 将它们合成为和平进程、国家发展或技术普及等长期趋势。
+    link: /zh-CN/overview/what-is-signa-index
+    linkText: 什么是 Signa Index
+  - title: 不只是求平均
+    details: 每个事件都会经过方向判断和重要性评估。真正影响目标状态的事件获得更高权重，正反事件被放到同一坐标上比较。
+    link: /zh-CN/overview/how-it-works
+    linkText: 看它如何运作
+  - title: 事件结束，指数继续
+    details: 预测市场会到期，现实趋势不会。旧事件退出、新事件接入，指数从原有点位继续记录状态变化。
+    link: /zh-CN/overview/why-world-state-index
+    linkText: 为什么需要它
 ---
 
 > **预测市场为事件结果定价；Signa Index 将世界状态的演进指数化。**
