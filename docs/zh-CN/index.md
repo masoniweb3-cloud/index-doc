@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: Signa Index
-  text: 把事件变成一条现实趋势
-  tagline: 汇集围绕同一现实主题的预测市场，持续反映世界正在朝哪个方向变化。
+  text: 从预测市场，看见世界趋势
+  tagline: 汇集围绕同一现实主题的预测市场，持续反映它正在增强、减弱，还是转向。
   actions:
     - theme: brand
       text: 了解 Signa Index
