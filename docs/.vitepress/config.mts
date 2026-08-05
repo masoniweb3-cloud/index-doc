@@ -168,7 +168,7 @@ export default defineConfig({
         nav: [
           { text: '概览', link: '/zh-CN/overview/what-is-signa-index' },
           { text: '开始使用', link: '/zh-CN/guide/' },
-          { text: '首发指数', link: '/zh-CN/indexes/' },
+          { text: '指数', link: '/zh-CN/indexes/' },
           { text: '指数构建', link: '/zh-CN/methodology/overview' },
         ],
         sidebar: zhSidebar,
