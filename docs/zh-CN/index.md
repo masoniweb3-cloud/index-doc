@@ -10,8 +10,8 @@ hero:
       text: 了解 Signa Index
       link: /zh-CN/overview/what-is-signa-index
     - theme: alt
-      text: 了解指数构建
-      link: /zh-CN/methodology/overview
+      text: 开始使用
+      link: /zh-CN/guide/
 
 features:
   - title: 看懂长期变化

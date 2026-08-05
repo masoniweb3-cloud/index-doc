@@ -63,6 +63,17 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
     ],
   },
   {
+    text: '使用指南',
+    items: [
+      { text: '开始使用', link: '/zh-CN/guide/' },
+      { text: '充值与提现', link: '/zh-CN/guide/funding' },
+      { text: '如何交易', link: '/zh-CN/guide/trading' },
+      { text: '费用说明', link: '/zh-CN/guide/fees' },
+      { text: '收益、亏损与指数归零', link: '/zh-CN/guide/returns-and-zero' },
+      { text: '安全机制与风险边界', link: '/zh-CN/guide/security' },
+    ],
+  },
+  {
     text: '核心概念',
     items: [
       { text: '世界状态', link: '/zh-CN/concepts/world-state' },
@@ -166,6 +177,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '概览', link: '/zh-CN/overview/what-is-signa-index' },
+          { text: '使用指南', link: '/zh-CN/guide/' },
           { text: '指数构建', link: '/zh-CN/methodology/overview' },
           { text: '指数', link: '/zh-CN/indexes/' },
           { text: '数据与 AI', link: '/zh-CN/data-and-ai/world-state-mapping' },
