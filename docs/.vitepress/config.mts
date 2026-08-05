@@ -70,7 +70,7 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
       { text: '如何交易', link: '/zh-CN/guide/trading' },
       { text: '费用说明', link: '/zh-CN/guide/fees' },
       { text: '收益、亏损与指数归零', link: '/zh-CN/guide/returns-and-zero' },
-      { text: '安全机制与风险边界', link: '/zh-CN/guide/security' },
+      { text: '资金安全与风险', link: '/zh-CN/guide/security' },
     ],
   },
   {
