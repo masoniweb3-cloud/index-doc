@@ -55,6 +55,14 @@ const localeRedirectScript = `(() => {
 
 const zhSidebar: DefaultTheme.SidebarItem[] = [
   {
+    text: '概览',
+    items: [
+      { text: '什么是 Signa Index', link: '/zh-CN/overview/what-is-signa-index' },
+      { text: '为什么需要世界状态指数', link: '/zh-CN/overview/why-world-state-index' },
+      { text: 'Signa Index 如何运作', link: '/zh-CN/overview/how-it-works' },
+    ],
+  },
+  {
     text: '使用指南',
     items: [
       { text: '开始使用', link: '/zh-CN/guide/' },
@@ -74,14 +82,6 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
       { text: '地缘秩序', link: '/zh-CN/indexes/geopolitical-order' },
       { text: '政治权力', link: '/zh-CN/indexes/political-power' },
       { text: '技术演进', link: '/zh-CN/indexes/technology-evolution' },
-    ],
-  },
-  {
-    text: '了解 Signa',
-    items: [
-      { text: '什么是 Signa Index', link: '/zh-CN/overview/what-is-signa-index' },
-      { text: '为什么需要世界状态指数', link: '/zh-CN/overview/why-world-state-index' },
-      { text: 'Signa Index 如何运作', link: '/zh-CN/overview/how-it-works' },
     ],
   },
   {
@@ -166,9 +166,9 @@ export default defineConfig({
       link: '/zh-CN/',
       themeConfig: {
         nav: [
+          { text: '概览', link: '/zh-CN/overview/what-is-signa-index' },
           { text: '开始使用', link: '/zh-CN/guide/' },
           { text: '首发指数', link: '/zh-CN/indexes/' },
-          { text: '了解 Signa', link: '/zh-CN/overview/what-is-signa-index' },
           { text: '指数构建', link: '/zh-CN/methodology/overview' },
         ],
         sidebar: zhSidebar,
