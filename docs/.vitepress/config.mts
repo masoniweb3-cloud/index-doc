@@ -102,7 +102,6 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
       { text: '数据来源', link: '/zh-CN/data-and-ai/data-sources' },
       { text: '世界状态映射', link: '/zh-CN/data-and-ai/world-state-mapping' },
       { text: '数据质量', link: '/zh-CN/data-and-ai/data-quality' },
-      { text: '人工监督', link: '/zh-CN/data-and-ai/human-oversight' },
     ],
   },
   {
@@ -121,15 +120,6 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
       { text: '指数与产品', link: '/zh-CN/products/index-and-products' },
       { text: '双向敞口', link: '/zh-CN/products/long-short-exposure' },
       { text: '风险与适用性', link: '/zh-CN/products/risks' },
-    ],
-  },
-  {
-    text: '治理',
-    items: [
-      { text: '指数治理', link: '/zh-CN/governance/index-governance' },
-      { text: '规则变更', link: '/zh-CN/governance/methodology-changes' },
-      { text: '异常事件', link: '/zh-CN/governance/exceptional-events' },
-      { text: '版本管理', link: '/zh-CN/governance/versioning' },
     ],
   },
   {
