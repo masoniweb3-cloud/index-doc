@@ -182,7 +182,7 @@ export default defineConfig({
     },
   },
   themeConfig: {
-    logo: false,
+    logo: '/images/signa-index-logo.png',
     search: { provider: 'local' },
     socialLinks: [
       {
