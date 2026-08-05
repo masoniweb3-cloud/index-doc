@@ -13,6 +13,23 @@
   letter-spacing: -0.035em;
 }
 
+html[lang='zh-CN'] .VPHomeHero .text,
+html[lang='zh-CN'] .VPHomeHero .tagline {
+  text-wrap: balance;
+}
+
+@media (min-width: 960px) {
+  html[lang='zh-CN'] .VPHomeHero .main {
+    width: 100%;
+  }
+
+  html[lang='zh-CN'] .VPHomeHero .name,
+  html[lang='zh-CN'] .VPHomeHero .text,
+  html[lang='zh-CN'] .VPHomeHero .tagline {
+    max-width: 880px;
+  }
+}
+
 .VPDoc h1 {
   letter-spacing: -0.025em;
 }
