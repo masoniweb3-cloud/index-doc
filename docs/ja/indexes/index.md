@@ -31,7 +31,7 @@ Signa Index の初回リリースでは、現実世界に関する6つのテー�
 
 6つのローンチインデックスはより広いファミリーに属しています。これらのページは分類の境界を説明しており、追加の取引可能な指数は発表していません。
 
-- 【国の発展】(/ja/indexes/country-development)
+- [国の発展](/ja/indexes/country-development)
 - [地政学的秩序](/ja/indexes/geopolitical-order)
 - [政治権力](/ja/indexes/political-power)
-- 【技術進化】(/ja/indexes/technology-evolution)
+- [技術進化](/ja/indexes/technology-evolution)
